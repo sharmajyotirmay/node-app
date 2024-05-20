@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>New Page</title>
+    <script>
+        window.addEventListener('beforeunload', function (event) {
+            window.location.reload();
+        });
+    </script>
 </head>
 <body>
     <h1>This is the new page!</h1>
