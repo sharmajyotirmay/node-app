@@ -1,50 +1,21 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <script>
-        window.addEventListener('beforeunload', function (event) {
-            window.location.reload();
-        });
-    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to my Node.js server!</h1>
-        <p>This is the home page.</p>
-        <p>Visit <a href="/new-page">new page</a> or <a href="/old-page">old page</a> (which will redirect).</p>
-    </div>
+    <h1>Welcome to the Home Page</h1>
+    <a href="https://node-app-wmiv.onrender.com/new-page" onclick="forceReload()">Go to New Page</a>
+    <br>
+    <a href="https://node-app-wmiv.onrender.com/old-page" onclick="forceReload()">Go to Old Page (Redirect)</a>
+
+    <script>
+        function forceReload() {
+            window.location.reload(true);
+        }
+    </script>
 </body>
 </html>

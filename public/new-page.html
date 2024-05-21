@@ -1,14 +1,19 @@
+<!-- new-page.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Page</title>
-    <script>
-        window.addEventListener('beforeunload', function (event) {
-            window.location.reload();
-        });
-    </script>
 </head>
 <body>
-    <h1>This is the new page!</h1>
+    <h1>Welcome to the New Page</h1>
+    <a href="/" onclick="forceReload()">Go to Home Page</a>
+
+    <script>
+        function forceReload() {
+            window.location.reload(true);
+        }
+    </script>
 </body>
 </html>
